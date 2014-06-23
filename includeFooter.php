@@ -7,7 +7,7 @@
             <a href="humans.txt"> <img src="img/humans-txt.png" alt="Humans.txt" height="20px"/> </a>
             <a> <img src="img/html5_css3.png"  height="20px"/> </a>
             
-       	</h3>
+        </h3>
     </footer>
 </div>
 
@@ -15,6 +15,7 @@
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
 
     <script src="js/jquery-ui-1.10.4.custom.js"></script>
+    <script src="js/jquery.maskedinput.js"></script>
     <script src="js/main.js"></script>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
@@ -27,4 +28,4 @@
         ga('create','UA-XXXXX-X');ga('send','pageview');
     </script>
 </body>
-</html>	
+</html> 
