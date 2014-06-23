@@ -23,6 +23,18 @@ $(function(){
 
 	});
 	
+	$('#msgOK').dialog({
+		autoOpen: false;
+		width: 30%;
+		modal: true;
+		resizable: false;
+		buttons: {
+			"OK" : function(){
+				//implementar o redirecionamento aqui 
+			}
+		}
+	});
+
 	$('#msgErro').dialog({
 		autoOpen: false;
 		width: 30%;
