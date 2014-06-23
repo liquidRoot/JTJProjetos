@@ -7,7 +7,7 @@ session_start();
 //						 assunto='".$atualizarAssunto."', descr_atendimento='".$atualizarAtendimento."',
 //						data_encerramento = '".$atualizarEncerramento."', prioridade='".$atualizarPrioridade."'	 WHERE num_atendimento='".$postAtendimento."'");
 
-//prepare pra q a query não rode agora
+//prepare (prepare)a query - ela não vai rodar agora
 $insere = $conexao->prepare(
 	"UPDATE atendimento 
 		SET (modulo_sistema, situacao, assunto, descr_atendimento, data_encerramento, prioridade) 
@@ -19,13 +19,13 @@ $insere = $conexao->prepare(
 //filter_var -filtra os resultados
 //(o filtro padrão é FILTER_SANITIZE_STRING que remove tags HTML)
 
-$modulo_sistema = filter_var($_POST["modulo_sistema"]);
-$situacao = filter_var($_POST["situacao"]);
-$assunto = filter_var($_POST["assunto"]);
+$modulo_sistema = 		filter_var($_POST["modulo_sistema"]);
+$situacao = 			filter_var($_POST["situacao"]);
+$assunto = 				filter_var($_POST["assunto"]);
 $descricaoAtendimento = filter_var($_POST["descr_atendimento"]);
-$dataEncerramento = filter_var($_POST["data_encerramento"]);
-$prioridade = filter_var($_POST["prioridade"]);
-$nAtendimento = filter_var($_POST["num_atendimento"]);
+$dataEncerramento = 	filter_var($_POST["data_encerramento"]);
+$prioridade = 			filter_var($_POST["prioridade"]);
+$nAtendimento = 		filter_var($_POST["num_atendimento"]);
 
 
 //prepara variaveis para a query
@@ -52,6 +52,9 @@ else {
 }
 
 include "includeFooter.php";
-mysql_close($conexao);
+
+
+//tenho que implementar o close da conexao
+//mysql_close($conexao);
 
 ?>
