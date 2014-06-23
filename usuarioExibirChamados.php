@@ -9,21 +9,22 @@ session_start();
 $postLogado = $_SESSION["login"];
 
 
-$query = mysql_query("SELECT * FROM ocorrencias WHERE login_chamado LIKE '%".$postLogado."%' ");
+$query = mysql_query("SELECT 'num_chamado', 'login_chamado', 'data_ocorre', 'descr_ocorre' FROM ocorrencias  ORDER BY 'data_ocorre' DESC LIMIT 30 WHERE login_chamado LIKE '%".$postLogado."%' ");
 
 include "includeHeader.php";
 include "barUsuario.html";
 
+
+// senão ouver resultado
+
 if (mysql_num_rows($query) == 0) {
 
-	session_destroy();
-	unset($_SESSION['login']);
-	unset($_SESSION['senha']);
-
-	echo "Erro 02: Sem resultados para a busca! <br><br>",
-	"<a href='index.php')'> Voltar </a>";
+	echo "Erro 02: Sem resultados para a busca! <br><br>";
+	
+	include 'includeFooter';
 exit;
-}// senão ouver resultados
+}
+
 
 else{
 
@@ -50,8 +51,9 @@ else{
 		;
 	}// fechando o while
 
-} //Fechando o else
+} //Fechando o else,
 echo "</table>";
 
-include "includeFooter.php"
+include "barUsuario.html";
+include "includeFooter.php";
 ?>
