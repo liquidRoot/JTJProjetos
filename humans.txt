@@ -1,0 +1,27 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+# BR
+
+# TEAM
+
+    Programmer/ Designer
+	Thiago Souza Santos 
+	
+	DBA / Project Manager
+	Jose Roberto da Silva
+	
+	Documenter / Traineer
+	Jean Carlos Antoniolli
+	
+# THANKS
+
+    Unisepe
+    Rene Ribeiro
+    Frederico Barbosa Muniz
+    
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3, PHP, MySQL
+    jQuery, Modernizr
+    ... and Google
