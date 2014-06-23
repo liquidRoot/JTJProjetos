@@ -20,8 +20,30 @@ $(function(){
 				$(this).dialog("close");
 			}
 		};
+
+	});
 	
+	$('#msgErro').dialog({
+		autoOpen: false;
+		width: 30%;
+		modal: true;
+		resizable: false;
+		buttons: {
+			"OK" : function(){
+				//implementar o redirecionamento aqui 
+			}
+		}
 	});
 
+	$('#msgErroLogin').dialog({
+		autoOpen: false;
+		width: 30%;
+		modal: true;
+		resizable: false;
+		buttons: {
+			"OK": function(){
+				//implementar o redirecionamento aqui 
+		}
+	};
 
 });
