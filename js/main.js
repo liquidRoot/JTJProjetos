@@ -23,7 +23,7 @@ $(function(){
 
 	});
 	
-	$('#msgOK').dialog({
+	$('#msgErro').dialog({
 		autoOpen: false;
 		width: 30%;
 		modal: true;

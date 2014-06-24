@@ -10,14 +10,14 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <link rel="stylesheet" href="css/jquery/jquery-ui.css"/>
+    <link rel='stylesheet' href="css/jquery/jquery.ui.all.css"/>
     <link rel="stylesheet" href="css/normalize.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="author" href="robots.txt" type="text/plain">
     <link rel="icon" href="favicon.ico" type="image/x-icon"/>
 
-    <link rel="stylesheet" href="css/jquery/jquery-ui.css"/>
     <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
-    <script src="js/plugins.js"></script>
 </head>
 <body>
 <!--[if lt IE 8]>

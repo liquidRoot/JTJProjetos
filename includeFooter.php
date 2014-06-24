@@ -16,8 +16,9 @@
 
     <script src="js/jquery-ui-1.10.4.custom.js"></script>
     <script src="js/jquery.maskedinput.js"></script>
+    <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
-
+    
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
         (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=

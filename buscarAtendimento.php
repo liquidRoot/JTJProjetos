@@ -35,8 +35,21 @@ switch ($_SESSION["tipo_usuario"]){
 	unset($_SESSION['login']);
 	unset($_SESSION['senha']);
 
-	echo "Erro ao carregar Menu <br><br>" .
-	"<a href='index.php'> Voltar </a>";
+	echo 
+	"<div id='msgErro' title='Erro ?39?'>" . 
+		"<p>
+			<span class='ui-icon-alert' style='float: left; margin: 0px 8px 0px 8px;'></span>
+		</p>" . 
+		"<p>
+			<h2>OPS!</h2>
+		</p>>"
+		"<p>
+			houve um erro ao carregar o menu <br>
+		</p>" . 
+		"<p>
+			Senão, aperte 'Cancelar'
+		</p>" . 
+	"</div>";
 }
 
 
@@ -47,7 +60,7 @@ if (mysql_num_rows($query) == 0) {
 	unset($_SESSION['senha']);
 
 	echo 
-	"<div id='msgErro' title='Erro ?43?'>" . 
+	"<div id='msgErro' title='Erro ?60?'>" . 
 		"<p>
 			<span class='ui-icon-alert' style='float: left; margin: 0px 8px 0px 8px;'></span>
 		</p>" . 
